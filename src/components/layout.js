@@ -18,7 +18,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Helmet title="{data.site.siteMetadata.title}">
+        <Helmet title={data.site.siteMetadata.title}>
           <html lang="en" />
         </Helmet>
         {children}
