@@ -18,8 +18,10 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Helmet title={data.site.siteMetadata.title}>
+        <Helmet>
           <html lang="en" />
+          <title>{data.site.siteMetadata.title}</title>
+          <meta name="google-site-verification" content="VfiHt_hBis8VcZHpXz3bMhNvBbmIVc_iMWVlZ3UjSJw" />
         </Helmet>
         {children}
       </>
