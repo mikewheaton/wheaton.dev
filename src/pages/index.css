@@ -10,10 +10,10 @@ html {
 }
 
 :root {
-  --black: #000000;
+  --primary: #0606f9;
+  --secondary: #e2dfcf;
+  --black: #0d0d0d;
   --gray: #f1f1f1;
-  --primary: #2436f4;
-  --secondary: #eceadf;
   --white: #ffffff;
   --monospace: 'Overpass Mono', monospace;
   --sans: 'Overpass', sans-serif;
