@@ -1,0 +1,10 @@
+.Note h1,
+h2,
+h3 {
+  font-family: var(--monospace);
+}
+
+.Note p {
+  font-family: 'Overpass', sans-serif;
+  font-size: 1.25rem;
+}

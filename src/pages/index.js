@@ -1,12 +1,14 @@
+import './Index.css';
+
 import React from 'react';
 
-import Home from '../components/home';
-import Layout from '../components/layout';
+import Home from '../components/Home/Home';
+import Standard from '../layouts/Standard/Standard';
 
-const IndexPage = () => (
-  <Layout>
+const Index = () => (
+  <Standard>
     <Home />
-  </Layout>
+  </Standard>
 );
 
-export default IndexPage;
+export default Index;
