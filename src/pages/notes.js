@@ -2,7 +2,7 @@ import { graphql } from 'gatsby';
 import React from 'react';
 
 import NoteList from '../components/NoteList/NoteList';
-import Standard from '../layouts/Standard/Standard';
+import Page from '../components/Page/Page';
 
 export default class Notes extends React.Component {
   render() {
@@ -15,10 +15,10 @@ export default class Notes extends React.Component {
     }));
 
     return (
-      <Standard>
+      <Page>
         <h1>Notes</h1>
         <NoteList notes={notes} />
-      </Standard>
+      </Page>
     );
   }
 }

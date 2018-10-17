@@ -3,12 +3,12 @@ import './Index.css';
 import React from 'react';
 
 import Home from '../components/Home/Home';
-import Standard from '../layouts/Standard/Standard';
+import Page from '../components/Page/Page';
 
 const Index = () => (
-  <Standard>
+  <Page>
     <Home />
-  </Standard>
+  </Page>
 );
 
 export default Index;

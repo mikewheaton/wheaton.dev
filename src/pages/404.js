@@ -1,12 +1,12 @@
 import React from 'react';
 
-import Standard from '../layouts/Standard/Standard';
+import Page from '../components/Page/Page';
 
 const NotFoundPage = () => (
-  <Standard>
+  <Page>
     <h1>NOT FOUND</h1>
     <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Standard>
+  </Page>
 );
 
 export default NotFoundPage;

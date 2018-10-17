@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 import './Note.css';
-import Standard from '../../layouts/Standard/Standard';
+import Page from '../Page/Page';
 
 export default class Note extends React.Component {
   render() {
@@ -9,14 +9,14 @@ export default class Note extends React.Component {
     const { frontmatter, html } = markdownRemark;
 
     return (
-      <Standard>
+      <Page>
         <div className="Note">
           <h1>{frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: html }} />
           <hr />
           <p>Published: {frontmatter.date}</p>
         </div>
-      </Standard>
+      </Page>
     );
   }
 }

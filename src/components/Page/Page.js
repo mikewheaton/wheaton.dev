@@ -1,10 +1,10 @@
-import './Standard.css';
+import './Page.css';
 
 import { graphql, StaticQuery } from 'gatsby';
 import React from 'react';
 import Helmet from 'react-helmet';
 
-const Standard = ({ children }) => (
+const Page = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -16,7 +16,7 @@ const Standard = ({ children }) => (
       }
     `}
     render={data => (
-      <div className="Standard">
+      <div className="Page">
         <Helmet>
           <html lang="en" />
           <title>{data.site.siteMetadata.title}</title>
@@ -31,4 +31,4 @@ const Standard = ({ children }) => (
   />
 );
 
-export default Standard;
+export default Page;
