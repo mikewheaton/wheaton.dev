@@ -11,10 +11,9 @@ export default class Note extends React.Component {
     return (
       <Page>
         <div className="Note">
-          <h1>{frontmatter.title}</h1>
+          <div className="Note-date">{frontmatter.date}</div>
+          <h1 className="Note-title">{frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: html }} />
-          <hr />
-          <p>Published: {frontmatter.date}</p>
         </div>
       </Page>
     );
@@ -26,7 +25,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "D MMMM YYYY")
         path
         title
       }
