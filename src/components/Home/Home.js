@@ -1,15 +1,71 @@
-import './Home.css';
-
 import { Link } from 'gatsby';
 import React from 'react';
+import styled from 'styled-components';
 
 import mike from './mike.png';
 
+const Root = styled.div`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+
+  /* @todo: Add a media query helper. */
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    padding: 40px;
+  }
+`;
+
+const Face = styled.div`
+  height: 50vh;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 2vh;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: 0;
+    flex-grow: 2;
+    height: 100vh;
+    margin-bottom: 0;
+    margin-right: 5vw;
+    max-height: 900px; /* Actual size. */
+  }
+`;
+
+const Words = styled.div`
+  font-family: var(--monospace);
+  font-weight: 300;
+  letter-spacing: -0.05rem;
+  line-height: 1.75;
+  margin: 0 0 1.2rem 0;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: 0;
+    flex-grow: 3;
+  }
+`;
+
+const LinkList = styled.ul`
+  list-style: none;
+  margin: 0;
+  max-width: 22em;
+  padding: 0;
+  width: 100%;
+
+  li {
+    margin-bottom: 0.4rem;
+  }
+`;
+
 const Home = () => {
   return (
-    <div className="Home">
-      <div className="Home-face" style={{ backgroundImage: `url(${mike})` }} />
-      <div className="Home-words">
+    <Root>
+      <Face style={{ backgroundImage: `url(${mike})` }} />
+      <Words>
         <p>hi, i&rsquo;m mike wheaton.</p>
         <p>
           user experience engineer at microsoft, building onedrive, sharepoint,
@@ -30,7 +86,7 @@ const Home = () => {
           to share <Link to="notes">notes on what i'm learning</Link>.
         </p>
         <p>find me on:</p>
-        <ul className="Home-links">
+        <LinkList>
           <li>
             <a href="https://github.com/mikewheaton">github</a>
           </li>
@@ -43,9 +99,9 @@ const Home = () => {
           <li>
             <a href="mailto:mike@wheaton.design">mail</a>
           </li>
-        </ul>
-      </div>
-    </div>
+        </LinkList>
+      </Words>
+    </Root>
   );
 };
 
