@@ -1,8 +1,13 @@
-import './Page.css';
-
 import { graphql, StaticQuery } from 'gatsby';
 import React from 'react';
 import Helmet from 'react-helmet';
+import styled from 'styled-components';
+
+const Root = styled.div`
+  margin: 0 auto;
+  max-width: 1000px;
+  min-width: 320px;
+`;
 
 const Page = ({ children }) => (
   <StaticQuery
@@ -16,7 +21,7 @@ const Page = ({ children }) => (
       }
     `}
     render={data => (
-      <div className="Page">
+      <Root>
         <Helmet>
           <html lang="en" />
           <title>{data.site.siteMetadata.title}</title>
@@ -26,7 +31,7 @@ const Page = ({ children }) => (
           />
         </Helmet>
         {children}
-      </div>
+      </Root>
     )}
   />
 );
