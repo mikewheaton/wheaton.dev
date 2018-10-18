@@ -1,19 +1,38 @@
-import './NoteList.css';
-
 import { Link } from 'gatsby';
 import React from 'react';
+import styled from 'styled-components';
+
+const Root = styled.ul`
+  list-style: none;
+  margin: 0;
+  padding: 0;
+`;
+
+const Note = styled.li`
+  margin-bottom: 40px;
+`;
+
+const TitleLink = styled(Link)`
+  font-size: 44px;
+  line-height: 1.4;
+`;
+
+const Date = styled.div`
+  font-size: 16px;
+  color: var(--secondary);
+  font-family: var(--monospace);
+  line-height: 2;
+`;
 
 export default ({ notes }) => {
   return (
-    <ul className="NoteList">
+    <Root>
       {notes.map(note => (
-        <li key={note.id} className="NoteList-item">
-          <Link className="NoteList-item-link" to={note.path}>
-            {note.title}
-          </Link>
-          <div className="NoteList-item-date">{note.date}</div>
-        </li>
+        <Note key={note.id}>
+          <TitleLink to={note.path}>{note.title}</TitleLink>
+          <Date>{note.date}</Date>
+        </Note>
       ))}
-    </ul>
+    </Root>
   );
 };
