@@ -1,16 +1,15 @@
-import './home.css';
+import './Home.css';
 
+import { Link } from 'gatsby';
 import React from 'react';
 
-import mike from '../images/mike.png';
+import mike from './mike.png';
 
-export default () => {
+const Home = () => {
   return (
-    <div class="Home">
-      <div class="face">
-        <img src={mike} alt="mike wheaton's face" />
-      </div>
-      <div class="words">
+    <div className="Home">
+      <div className="Home-face" style={{ backgroundImage: `url(${mike})` }} />
+      <div className="Home-words">
         <p>hi, i&rsquo;m mike wheaton.</p>
         <p>
           user experience engineer at microsoft, building onedrive, sharepoint,
@@ -24,14 +23,14 @@ export default () => {
         </p>
         <p>
           <span title="as of September 28, 2018">currently</span>: getting back
-          into running. kicking off a{' '}
-          <a href="http://www.lurn.today/">side project</a> to learn full-stack
-          development. rebuilding this site on{' '}
-          <a href="https://www.gatsbyjs.org/">gatsby</a>. exploring, with recent
-          trips to austin, denver, and portland.
+          into running. kicking off a fun{' '}
+          <a href="http://www.lurn.today/">side project</a>. exploring, with
+          recent trips to austin, denver, and portland. rebuilding this site on{' '}
+          <a href="https://www.gatsbyjs.org/">gatsby</a> (love it) with a page
+          to share <Link to="notes">notes on what i'm learning</Link>.
         </p>
         <p>find me on:</p>
-        <ul>
+        <ul className="Home-links">
           <li>
             <a href="https://github.com/mikewheaton">github</a>
           </li>
@@ -49,3 +48,5 @@ export default () => {
     </div>
   );
 };
+
+export default Home;
