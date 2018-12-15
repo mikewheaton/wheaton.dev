@@ -16,8 +16,8 @@ const Root = styled.div`
 `;
 
 const Date = styled.div`
-  color: var(--secondary);
-  font-family: var(--monospace);
+  color: ${props => props.theme.color.secondary};
+  font-family: ${props => props.theme.font.monospace};
 `;
 
 const Title = styled.h1`

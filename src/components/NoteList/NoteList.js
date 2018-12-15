@@ -19,8 +19,8 @@ const TitleLink = styled(Link)`
 
 const Date = styled.div`
   font-size: 16px;
-  color: var(--secondary);
-  font-family: var(--monospace);
+  color: ${props => props.theme.color.secondary};
+  font-family: ${props => props.theme.font.monospace};
   line-height: 2;
 `;
 
