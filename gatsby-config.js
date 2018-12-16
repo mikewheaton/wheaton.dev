@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'mike wheaton',
+    description: 'personal site of mike wheaton',
+    siteUrl: 'https://wheaton.design',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -67,5 +69,6 @@ module.exports = {
         ],
       },
     },
+    'gatsby-plugin-feed',
   ],
 };
