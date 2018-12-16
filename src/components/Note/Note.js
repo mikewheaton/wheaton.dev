@@ -16,8 +16,8 @@ const Root = styled.div`
 `;
 
 const Date = styled.div`
-  color: ${props => props.theme.color.secondary};
-  font-family: ${props => props.theme.font.monospace};
+  color: ${props => props.theme.colors.secondaryText};
+  font-family: ${props => props.theme.fonts.monospace};
 `;
 
 const Title = styled.h1`
@@ -30,7 +30,7 @@ export default class Note extends React.Component {
     const { frontmatter, html } = markdownRemark;
 
     return (
-      <Page>
+      <Page themeVariant="light">
         <Root>
           <Date>{frontmatter.date}</Date>
           <Title>{frontmatter.title}</Title>

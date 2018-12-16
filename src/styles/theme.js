@@ -11,9 +11,38 @@ const fonts = {
   sans: "'Overpass', sans-serif",
 };
 
-const theme = {
-  color: { ...colors },
-  font: { ...fonts },
+const darkTheme = {
+  colors: {
+    background: colors.primary,
+    primaryText: colors.white,
+    secondaryText: colors.secondary,
+  },
+  fonts: {
+    default: fonts.sans,
+    monospace: fonts.monospace,
+  },
+};
+
+// @todo: Theme properties should override the default theme, so not everything
+//        has to be redefined for each theme.
+const lightTheme = {
+  colors: {
+    background: colors.white,
+    primaryText: colors.black,
+    secondaryText: colors.gray,
+  },
+  fonts: {
+    default: fonts.sans,
+    monospace: fonts.monospace,
+  },
+};
+
+const theme = variant => {
+  if (variant === 'light') {
+    return lightTheme;
+  } else {
+    return darkTheme;
+  }
 };
 
 export default theme;
