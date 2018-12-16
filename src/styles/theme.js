@@ -2,7 +2,8 @@ const colors = {
   primary: '#0606f9',
   secondary: '#e2dfcf',
   black: '#0d0d0d',
-  gray: '#f1f1f1',
+  lightGray: '#f1f1f1',
+  darkGray: '#555',
   white: '#ffffff',
 };
 
@@ -29,7 +30,7 @@ const lightTheme = {
   colors: {
     background: colors.white,
     primaryText: colors.black,
-    secondaryText: colors.gray,
+    secondaryText: colors.darkGray,
   },
   fonts: {
     default: fonts.sans,

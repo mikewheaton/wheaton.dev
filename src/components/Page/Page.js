@@ -27,6 +27,7 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     height: 100vh;
     padding: 20px;
+    transition: background-color 0.1s linear;
   }
 
   a,
