@@ -3,6 +3,7 @@ import React from 'react';
 
 import NoteList from '../components/NoteList/NoteList';
 import Page from '../components/Page/Page';
+import BackLink from '../components/BackLink/BackLink';
 
 export default class Notes extends React.Component {
   render() {
@@ -16,7 +17,7 @@ export default class Notes extends React.Component {
 
     return (
       <Page>
-        <h1>Notes</h1>
+        <BackLink title="Home" to="/" />
         <NoteList notes={notes} />
       </Page>
     );

@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
-
+import BackLink from '../BackLink/BackLink';
 import Page from '../Page/Page';
 
 const Root = styled.div`
@@ -9,19 +9,20 @@ const Root = styled.div`
     font-family: 'Overpass', sans-serif;
     font-size: 1.25rem;
   }
+`;
 
-  pre {
-    overflow-x: scroll;
-  }
+const Title = styled.h1`
+  font-size: 44px;
+  margin: 0;
+`;
+
+const Content = styled.div`
+  margin-bottom: 40px;
 `;
 
 const Date = styled.div`
   color: ${props => props.theme.colors.secondaryText};
   font-family: ${props => props.theme.fonts.monospace};
-`;
-
-const Title = styled.h1`
-  font-size: 44px;
 `;
 
 export default class Note extends React.Component {
@@ -32,9 +33,10 @@ export default class Note extends React.Component {
     return (
       <Page themeVariant="light">
         <Root>
-          <Date>{frontmatter.date}</Date>
+          <BackLink title="Notes" to="/notes" />
           <Title>{frontmatter.title}</Title>
-          <div dangerouslySetInnerHTML={{ __html: html }} />
+          <Content dangerouslySetInnerHTML={{ __html: html }} />
+          <Date>{frontmatter.date}</Date>
         </Root>
       </Page>
     );
