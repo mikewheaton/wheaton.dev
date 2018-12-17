@@ -8,8 +8,8 @@ const colors = {
 };
 
 const fonts = {
-  monospace: "'Overpass Mono', monospace",
-  sans: "'Overpass', sans-serif",
+  monospace: `'Space Mono', monospace`,
+  sans: `'Work Sans', sans-serif`,
 };
 
 const darkTheme = {
@@ -17,10 +17,10 @@ const darkTheme = {
     background: colors.primary,
     primaryText: colors.white,
     secondaryText: colors.secondary,
+    emphasizedText: colors.secondary,
   },
   fonts: {
-    default: fonts.sans,
-    monospace: fonts.monospace,
+    ...fonts,
   },
 };
 
@@ -31,10 +31,10 @@ const lightTheme = {
     background: colors.white,
     primaryText: colors.black,
     secondaryText: colors.darkGray,
+    emphasizedText: colors.darkGray,
   },
   fonts: {
-    default: fonts.sans,
-    monospace: fonts.monospace,
+    ...fonts,
   },
 };
 

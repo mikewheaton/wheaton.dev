@@ -39,7 +39,7 @@ const Face = styled.div`
 const Words = styled.div`
   font-family: ${props => props.theme.fonts.monospace};
   font-weight: 300;
-  letter-spacing: -0.05rem;
+  font-size: 1.1rem;
   line-height: 1.75;
   margin: 0 0 1.2rem 0;
 

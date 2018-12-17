@@ -13,8 +13,17 @@ const Note = styled.li`
 `;
 
 const TitleLink = styled(Link)`
-  font-size: 44px;
+  font-size: 2.5rem;
   line-height: 1.4;
+  font-family: ${props => props.theme.fonts.monospace};
+  display: inline-block;
+  font-weight: bold;
+  margin: 0 0 8px 0;
+
+  /* @todo: Have used this messy method twice now. */
+  &:hover {
+    margin-bottom: 6px;
+  }
 `;
 
 const Date = styled.div`
