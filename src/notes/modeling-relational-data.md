@@ -2,6 +2,7 @@
 path: '/notes/modeling-relational-data'
 date: '2018-12-16'
 title: 'Modeling (and querying) relational data with JavaScript'
+draft: false
 ---
 
 This post describes a way of modeling relational data in JavaScript and shows how the `filter()` and `some()` array methods can be used to query this data. It's not intended to replace a real database, but to show how an array of objects can be filtered based on the contents of another array of objects.

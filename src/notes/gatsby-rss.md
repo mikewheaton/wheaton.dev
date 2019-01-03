@@ -2,6 +2,7 @@
 path: '/notes/gatsby-rss'
 date: '2019-01-01'
 title: 'Publishing an RSS feed with Gatsby'
+draft: false
 ---
 
 ## Wait, what's RSS?
