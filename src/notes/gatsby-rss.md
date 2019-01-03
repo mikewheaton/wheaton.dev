@@ -1,6 +1,6 @@
 ---
 path: '/notes/gatsby-rss'
-date: '2018-01-01'
+date: '2019-01-01'
 title: 'Publishing an RSS feed with Gatsby'
 ---
 
