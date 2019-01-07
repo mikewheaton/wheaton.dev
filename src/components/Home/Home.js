@@ -78,12 +78,11 @@ const Home = () => {
           doesn&rsquo;t rain as much as you think it does. but almost.
         </p>
         <p>
-          <span title="as of December 16, 2018">currently</span>: fighting jet
-          lag after a month of traveling and working remotely in the
-          philippines. getting back into running and spin classes. kicking off a
-          fun <a href="http://www.lurn.today/">side project</a>. rebuilding this
-          site on <a href="https://www.gatsbyjs.org/">gatsby</a> (love it) with
-          a page to share <Link to="notes">notes on what i'm learning</Link>.
+          <span title="as of January 6, 2018">currently</span>: training for a
+          10k run. learning full-stack development with a fun{' '}
+          <a href="http://www.lurn.today/">side project</a>. trying calligraphy.
+          rebuilding this site on <a href="https://www.gatsbyjs.org/">gatsby</a>{' '}
+          and including <Link to="notes">notes on what I'm learning</Link>.
         </p>
         <p>find me on:</p>
         <LinkList>
