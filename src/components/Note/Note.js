@@ -51,6 +51,18 @@ const Root = styled.div`
   pre {
     margin-bottom: 2rem;
   }
+
+  /* Image styles. */
+  .gatsby-resp-image-figure {
+    margin: 0;
+
+    figcaption {
+      font-size: 0.9rem;
+    }
+  }
+  .gatsby-resp-image-wrapper {
+    margin: 0 0 8px 0 !important;
+  }
 `;
 
 const Title = styled.h1`
