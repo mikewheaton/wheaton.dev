@@ -51,7 +51,7 @@ You're almost there! Let's get the data into your React application.
 
 In whichever component will display the data, start by adding an empty array to the state. This is where you'll place the items from the spreadsheet as they are loaded in.
 
-```
+```javascript
 class App extends Component {
   state = {
     items: []
@@ -60,7 +60,7 @@ class App extends Component {
 
 When you want a React component to request external data, `componentDidMount` is the place to kick off that request. Create that method and add a fetch() that will request the data and put it into your component’s state.
 
-```
+```javascript
   componentDidMount() {
     fetch(`https://spreadsheet.glitch.me/?key=SPREADSHEET_KEY`)
       .then(response => response.json())
@@ -71,7 +71,7 @@ When you want a React component to request external data, `componentDidMount` is
 
 Now in the render method, you can get the items from state and map over them.
 
-```
+```javascript
   render() {
     const { items } = this.state;
 
