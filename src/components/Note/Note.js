@@ -2,6 +2,7 @@ import { graphql } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 import BackLink from '../BackLink/BackLink';
+import NotesHeader from '../NotesHeader/NotesHeader';
 import Page from '../Page/Page';
 
 const Root = styled.div`
@@ -89,7 +90,7 @@ export default class Note extends React.Component {
     return (
       <Page themeVariant="light">
         <Root>
-          <BackLink title="Notes" to="/notes" />
+          <NotesHeader backTitle="Notes" backTo="/notes" />
           <Title>{frontmatter.title}</Title>
           <Date>{frontmatter.date}</Date>
           <Content dangerouslySetInnerHTML={{ __html: html }} />
