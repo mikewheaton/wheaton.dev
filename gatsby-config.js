@@ -32,6 +32,8 @@ module.exports = {
           {
             site {
               siteMetadata {
+                title
+                description
                 siteUrl
               }
             }
@@ -42,10 +44,10 @@ module.exports = {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
               return allMarkdownRemark.edges.map(edge => {
                 return Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.excerpt,
+                  title: edge.node.frontmatter.title,
                   date: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
-                  guid: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
+                  description: edge.node.excerpt,
                   custom_elements: [{ 'content:encoded': edge.node.html }],
                 });
               });
@@ -61,6 +63,7 @@ module.exports = {
                       excerpt
                       html
                       frontmatter {
+                        title
                         date
                         path
                       }
@@ -70,7 +73,6 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: "Mike Wheaton's RSS Feed",
           },
         ],
       },
