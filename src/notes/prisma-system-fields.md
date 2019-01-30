@@ -1,5 +1,5 @@
 ---
-path: '/notes/prisma-created-updated'
+path: '/notes/prisma-system-fields'
 date: '2019-01-29'
 title: 'Sorting by Created Date with GraphQL and Prisma'
 draft: false
