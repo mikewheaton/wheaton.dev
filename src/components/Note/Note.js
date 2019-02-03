@@ -1,7 +1,6 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
-import BackLink from '../BackLink/BackLink';
 import NotesHeader from '../NotesHeader/NotesHeader';
 import Page from '../Page/Page';
 

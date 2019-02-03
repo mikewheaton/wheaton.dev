@@ -78,7 +78,7 @@ const Home = () => {
           doesn&rsquo;t rain as much as you think it does. but almost.
         </p>
         <p>
-          <span title="as of January 6, 2018">currently</span>: training for a
+          <span title="as of February 2, 2019">currently</span>: training for a
           10k run. learning full-stack development with a fun{' '}
           <a href="http://www.lurn.today/">side project</a>. trying calligraphy.
           rebuilding this site on <a href="https://www.gatsbyjs.org/">gatsby</a>{' '}
