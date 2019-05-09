@@ -38,8 +38,8 @@ const Face = styled.div`
 const Words = styled.div`
   font-family: ${props => props.theme.fonts.monospace};
   font-weight: 300;
-  font-size: 1.1rem;
-  line-height: 1.75;
+  font-size: ${props => props.theme.sizes.small};
+  line-height: ${props => props.theme.lineHeights.narrow};
   margin: 0 0 1.2rem 0;
 
   @media screen and (min-width: 768px) {

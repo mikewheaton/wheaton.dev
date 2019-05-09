@@ -19,6 +19,7 @@ const GlobalStyles = createGlobalStyle`
   /* Scale the base size (16px to 24px) based on the viewport's width. */
   html {
     font-size: 16px;
+    line-height: ${props => props.theme.lineHeights.regular};
   }
   @media screen and (min-width: 50rem) {
     html {

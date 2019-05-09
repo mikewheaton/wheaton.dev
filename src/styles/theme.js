@@ -23,6 +23,12 @@ export const sizes = {
   xSmall: '0.75rem',
 };
 
+export const lineHeights = {
+  wide: 1.8,
+  regular: 1.5,
+  narrow: 1.2,
+};
+
 const defaultTheme = {
   colors: {
     background: palette.white,
@@ -35,6 +41,9 @@ const defaultTheme = {
   },
   sizes: {
     ...sizes,
+  },
+  lineHeights: {
+    ...lineHeights,
   },
 };
 

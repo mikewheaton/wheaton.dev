@@ -19,7 +19,7 @@ const Root = styled.div`
 
   h1 {
     font-size: ${props => props.theme.sizes.large};
-    line-height: 1.2;
+    line-height: ${props => props.theme.lineHeights.narrow};
   }
 
   h2 {
@@ -28,7 +28,6 @@ const Root = styled.div`
 
   p {
     font-size: ${props => props.theme.sizes.small};
-    line-height: 1.4;
     margin: 0 0 1.4rem 0;
   }
 
@@ -43,8 +42,8 @@ const Root = styled.div`
   }
 
   li {
-    font-size: ${props => props.theme.sizes.medium};
-    line-height: 1.4;
+    font-size: ${props => props.theme.sizes.small};
+    line-height: ${props => props.theme.lineHeights.wide};
   }
 
   /* @todo: Create a custom theme for code snippets. */
