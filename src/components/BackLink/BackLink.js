@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 const Root = styled(Link)`
-  font-size: 20px;
+  font-size: ${props => props.theme.sizes.small};
   font-family: ${props => props.theme.fonts.monospace};
   text-transform: uppercase;
   margin-bottom: 40px;

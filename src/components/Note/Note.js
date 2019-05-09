@@ -5,6 +5,8 @@ import NotesHeader from '../NotesHeader/NotesHeader';
 import Page from '../Page/Page';
 
 const Root = styled.div`
+  padding: 1rem;
+
   h1,
   h2,
   h3,
@@ -16,17 +18,18 @@ const Root = styled.div`
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: ${props => props.theme.sizes.large};
+    line-height: 1.2;
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: ${props => props.theme.sizes.medium};
   }
 
   p {
-    font-size: 1.35rem;
-    line-height: 2rem;
-    margin: 0 0 2rem 0;
+    font-size: ${props => props.theme.sizes.small};
+    line-height: 1.4;
+    margin: 0 0 1.4rem 0;
   }
 
   em {
@@ -40,8 +43,8 @@ const Root = styled.div`
   }
 
   li {
-    font-size: 1.35rem;
-    line-height: 2rem;
+    font-size: ${props => props.theme.sizes.medium};
+    line-height: 1.4;
   }
 
   /* @todo: Create a custom theme for code snippets. */
@@ -58,7 +61,7 @@ const Root = styled.div`
     margin: 0;
 
     figcaption {
-      font-size: 0.9rem;
+      font-size: ${props => props.theme.sizes.small};
     }
   }
   .gatsby-resp-image-wrapper {
@@ -67,7 +70,7 @@ const Root = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 44px;
+  font-size: ${props => props.theme.sizes.large};
   margin: 0;
   font-family: ${props => props.theme.fonts.monospace};
 `;

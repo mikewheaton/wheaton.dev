@@ -13,7 +13,7 @@ const Note = styled.li`
 `;
 
 const TitleLink = styled(Link)`
-  font-size: 2.5rem;
+  font-size: ${props => props.theme.sizes.medium};
   line-height: 1.4;
   font-family: ${props => props.theme.fonts.monospace};
   display: inline-block;
@@ -27,7 +27,7 @@ const TitleLink = styled(Link)`
 `;
 
 const Date = styled.div`
-  font-size: 16px;
+  font-size: ${props => props.theme.sizes.xSmall};
   color: ${props => props.theme.colors.secondaryText};
   font-family: ${props => props.theme.fonts.monospace};
   line-height: 2;

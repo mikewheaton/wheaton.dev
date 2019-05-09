@@ -9,7 +9,7 @@ const Root = styled.div`
 `;
 
 const BackLink = styled(Link)`
-  font-size: 20px;
+  font-size: ${props => props.theme.sizes.small};
   font-family: ${props => props.theme.fonts.monospace};
   text-transform: uppercase;
   margin-bottom: 40px;
@@ -23,7 +23,7 @@ const BackLink = styled(Link)`
 `;
 
 const Title = styled.div`
-  font-size: 20px;
+  font-size: ${props => props.theme.sizes.small};
   color: ${props => props.theme.colors.secondaryText};
 `;
 
