@@ -16,7 +16,21 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: inherit;
   }
 
-  /* @todo: Most of these styles should be part of specific pages, not global. */
+  /* Scale the base size (16px to 24px) based on the viewport's width. */
+  html {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 50rem) {
+    html {
+      font-size: 2vw;
+    }
+  }
+  @media screen and (min-width: 75em) {
+    html {
+      font-size: 1.5rem;
+    }
+  }
+
   body {
     font-family: ${props => props.theme.fonts.sans};
     background-color: ${props => props.theme.colors.background};
