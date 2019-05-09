@@ -9,7 +9,6 @@ const Root = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0;
-  min-height: 100vh;
 
   /* @todo: Add a media query helper. */
   @media screen and (min-width: 768px) {
@@ -82,7 +81,7 @@ const Home = () => {
           10k run. learning full-stack development with a fun{' '}
           <a href="http://www.lurn.today/">side project</a>. trying calligraphy.
           rebuilding this site on <a href="https://www.gatsbyjs.org/">gatsby</a>{' '}
-          and including <Link to="notes">notes on what I'm learning</Link>.
+          and including <Link to="/notes">notes on what I'm learning</Link>.
         </p>
         <p>find me on:</p>
         <LinkList>
