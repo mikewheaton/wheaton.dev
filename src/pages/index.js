@@ -49,7 +49,7 @@ class Index extends React.Component {
     }));
 
     return (
-      <Page themeVariant={this.state.isThemeDark ? 'dark' : 'light'}>
+      <Page themeVariant={this.state.isThemeDark && 'dark'}>
         <HomeWrapper ref={this.homeRef}>
           <Home />
         </HomeWrapper>

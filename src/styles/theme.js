@@ -1,48 +1,42 @@
-const colors = {
-  primary: '#0606f9',
-  secondary: '#e2dfcf',
-  black: '#0d0d0d',
-  lightGray: '#f1f1f1',
-  darkGray: '#555',
-  white: '#ffffff',
+const palette = {
+  ice: 'hsl(240, 65%, 50%)',
+  cool: 'hsl(240, 15%, 90%)',
+  hot: 'hsl(30, 65%, 50%)',
+  warm: 'hsl(30, 30%, 85%)',
+  black: 'hsl(240, 40%, 10%)',
+  darkGray: 'hsl(240, 10%, 30%)',
+  lightGray: 'hsl(240, 40%, 96%)',
+  white: 'hsl(0, 0%, 100%)',
 };
 
-const fonts = {
-  monospace: `'Space Mono', monospace`,
-  sans: `'Work Sans', sans-serif`,
+const defaultTheme = {
+  colors: {
+    background: palette.white,
+    primaryText: palette.black,
+    secondaryText: palette.darkGray,
+    emphasizedText: palette.darkGray,
+  },
+  fonts: {
+    monospace: `'Space Mono', monospace`,
+    sans: `'Work Sans', sans-serif`,
+  },
 };
 
 const darkTheme = {
+  ...defaultTheme,
   colors: {
-    background: colors.primary,
-    primaryText: colors.white,
-    secondaryText: colors.secondary,
-    emphasizedText: colors.secondary,
-  },
-  fonts: {
-    ...fonts,
-  },
-};
-
-// @todo: Theme properties should override the default theme, so not everything
-//        has to be redefined for each theme.
-const lightTheme = {
-  colors: {
-    background: colors.white,
-    primaryText: colors.black,
-    secondaryText: colors.darkGray,
-    emphasizedText: colors.darkGray,
-  },
-  fonts: {
-    ...fonts,
+    background: palette.ice,
+    primaryText: palette.white,
+    secondaryText: palette.warm,
+    emphasizedText: palette.hot,
   },
 };
 
 const theme = variant => {
-  if (variant === 'light') {
-    return lightTheme;
-  } else {
+  if (variant === 'dark') {
     return darkTheme;
+  } else {
+    return defaultTheme;
   }
 };
 

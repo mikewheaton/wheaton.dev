@@ -12,6 +12,7 @@ const Root = styled.div`
   h5 {
     font-family: ${props => props.theme.fonts.monospace};
     margin: 0 0 8px 0;
+    color: ${props => props.theme.colors.secondaryText};
   }
 
   h1 {
@@ -87,7 +88,7 @@ export default class Note extends React.Component {
     const { frontmatter, html } = markdownRemark;
 
     return (
-      <Page themeVariant="light">
+      <Page>
         <Root>
           <NotesHeader backTitle="Home" backTo="/#notes" />
           <Title>{frontmatter.title}</Title>
