@@ -26,8 +26,7 @@ const GlobalStyles = createGlobalStyle`
       auto;
     margin: 0;
     height: 100vh;
-    padding: 20px;
-    transition: background-color 0.1s linear;
+    transition: background-color 0.4s cubic-bezier(.17,.67,.83,.67);
   }
 
   a,
