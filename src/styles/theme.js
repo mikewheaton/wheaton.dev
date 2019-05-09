@@ -1,20 +1,20 @@
-const colors = {
-  ice: 'hsl(240,66%,52%)',
-  cool: 'hsl(240,15%,90%)',
-  hot: 'hsl(30, 66%, 52%)',
-  warm: 'hsl(29,30%,85%)',
-  black: 'hsl(240,40%,10%)',
-  darkGray: 'hsl(240,10%,25%)',
-  lightGray: 'hsl(240,40%,97%)',
-  white: '#ffffff',
+const palette = {
+  ice: 'hsl(240, 65%, 50%)',
+  cool: 'hsl(240, 15%, 90%)',
+  hot: 'hsl(30, 65%, 50%)',
+  warm: 'hsl(30, 30%, 85%)',
+  black: 'hsl(240, 40%, 10%)',
+  darkGray: 'hsl(240, 10%, 30%)',
+  lightGray: 'hsl(240, 40%, 96%)',
+  white: 'hsl(0, 0%, 100%)',
 };
 
 const defaultTheme = {
   colors: {
-    background: colors.white,
-    primaryText: colors.black,
-    secondaryText: colors.darkGray,
-    emphasizedText: colors.darkGray,
+    background: palette.white,
+    primaryText: palette.black,
+    secondaryText: palette.darkGray,
+    emphasizedText: palette.darkGray,
   },
   fonts: {
     monospace: `'Space Mono', monospace`,
@@ -25,10 +25,10 @@ const defaultTheme = {
 const darkTheme = {
   ...defaultTheme,
   colors: {
-    background: colors.ice,
-    primaryText: colors.white,
-    secondaryText: colors.warm,
-    emphasizedText: colors.hot,
+    background: palette.ice,
+    primaryText: palette.white,
+    secondaryText: palette.warm,
+    emphasizedText: palette.hot,
   },
 };
 

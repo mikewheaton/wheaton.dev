@@ -12,6 +12,7 @@ const Root = styled.div`
   h5 {
     font-family: ${props => props.theme.fonts.monospace};
     margin: 0 0 8px 0;
+    color: ${props => props.theme.colors.secondaryText};
   }
 
   h1 {
