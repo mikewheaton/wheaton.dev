@@ -87,7 +87,7 @@ export default class Note extends React.Component {
     const { frontmatter, html } = markdownRemark;
 
     return (
-      <Page themeVariant="light">
+      <Page>
         <Root>
           <NotesHeader backTitle="Home" backTo="/#notes" />
           <Title>{frontmatter.title}</Title>
