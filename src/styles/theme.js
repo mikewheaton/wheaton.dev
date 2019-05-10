@@ -21,6 +21,7 @@ export const sizes = {
   medium: '1.333rem',
   small: '1rem',
   xSmall: '0.75rem',
+  xxSmall: '0.563rem',
 };
 
 export const lineHeights = {
@@ -36,6 +37,7 @@ const defaultTheme = {
     secondaryText: palette.darkGray,
     emphasizedText: palette.darkGray,
   },
+  palette,
   fonts: {
     ...fonts,
   },
