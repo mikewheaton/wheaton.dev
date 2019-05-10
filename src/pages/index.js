@@ -1,18 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Home from '../components/Home/Home';
+import About from '../components/About/About';
 import Page from '../components/Page/Page';
 import NoteList from '../components/NoteList/NoteList';
 
-const HomeWrapper = styled.div`
+const Slide = styled.div`
   min-height: 100vh;
-  padding: 20px;
-`;
-
-const NotesWrapper = styled.div`
-  min-height: 100vh;
-  padding: 20px;
+  padding: ${props => props.theme.sizes.large};
+  display: flex;
+  justify-content: ${props => (props.centerContent ? 'center' : 'flex-start')};
+  flex-direction: column;
 `;
 
 class Index extends React.Component {
@@ -20,7 +18,7 @@ class Index extends React.Component {
     isThemeDark: true,
   };
 
-  homeRef = React.createRef();
+  aboutRef = React.createRef();
 
   componentDidMount() {
     const observer = new IntersectionObserver(
@@ -34,8 +32,8 @@ class Index extends React.Component {
       }
     );
 
-    if (this.homeRef.current) {
-      observer.observe(this.homeRef.current);
+    if (this.aboutRef.current) {
+      observer.observe(this.aboutRef.current);
     }
   }
 
@@ -50,13 +48,13 @@ class Index extends React.Component {
 
     return (
       <Page themeVariant={this.state.isThemeDark && 'dark'}>
-        <HomeWrapper ref={this.homeRef}>
-          <Home />
-        </HomeWrapper>
-        <NotesWrapper id="notes">
+        <Slide centerContent={true} ref={this.aboutRef}>
+          <About />
+        </Slide>
+        <Slide id="notes">
           <h2>Notes</h2>
           <NoteList notes={notes} />
-        </NotesWrapper>
+        </Slide>
       </Page>
     );
   }

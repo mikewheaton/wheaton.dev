@@ -5,7 +5,7 @@ import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
 import theme from '../../styles/theme.js';
 
 const GlobalStyles = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700|Work+Sans:400,700');
+  @import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700|Work+Sans:300,400,700');
 
   html {
     box-sizing: border-box;
@@ -60,8 +60,7 @@ const GlobalStyles = createGlobalStyle`
 
 const Root = styled.div`
   margin: 0 auto;
-  max-width: 880px; /* @todo: Switch everything to REM. */
-  min-width: 320px;
+  max-width: 37rem;
 `;
 
 const Page = ({ children, themeVariant }) => {
