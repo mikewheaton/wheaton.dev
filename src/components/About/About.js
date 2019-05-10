@@ -82,10 +82,8 @@ const About = () => (
           Microsoft, I accomplished this in my role as a UX Engineer by creating
           everything from prototypes to production apps while being a key
           contributor to the{' '}
-          <a href="https://developer.microsoft.com/en-us/fabric">
-            Fabric design system
-          </a>
-          .
+          <a href="https://developer.microsoft.com/en-us/fabric">Fabric</a>{' '}
+          design system .
         </p>
         <p>
           Originally from Canada, now residing in beautiful Seattle. It
@@ -93,9 +91,9 @@ const About = () => (
         </p>
         <p>
           <strong title="as of May 10, 2019">Currently</strong>: Taking a
-          sabattical. Learning full-stack development by tackling a fun side
-          project. Drawing (nearly) every day. Attending meetups to get to know
-          the local design and development community.
+          sabattical. Learning full-stack development with a fun side project.
+          Drawing (nearly) every day. Attending meetups to get to know the local
+          design and development community.
         </p>
         <p>
           Find me on <a href="https://twitter.com/themikewheaton">Twitter</a>,{' '}
