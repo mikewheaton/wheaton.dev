@@ -77,13 +77,12 @@ const About = () => (
       <Text>
         <p>
           I solve business problems at the intersection of design and
-          engineering. My recent focus has been on helping these disciplines
-          better collaborate with improved processes and shared tools. At
-          Microsoft, I accomplished this in my role as a UX Engineer by creating
-          everything from prototypes to production apps while being a key
-          contributor to the{' '}
+          engineering. My focus is on bridging the gap between these disciplines
+          with improved processes and shared tools. As a UX Engineer at
+          Microsoft, I created everything from prototypes to production apps
+          while being a key contributor to the{' '}
           <a href="https://developer.microsoft.com/en-us/fabric">Fabric</a>{' '}
-          design system .
+          design system.
         </p>
         <p>
           Originally from Canada, now residing in beautiful Seattle. It
