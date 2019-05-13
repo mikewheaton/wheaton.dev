@@ -48,11 +48,13 @@ const Root = styled.div`
 
   /* @todo: Create a custom theme for code snippets. */
   *:not(pre) > code {
-    padding: 0.1rem 0.2rem 0.2rem 0.2rem;
+    padding: ${props => props.theme.sizes.xxxSmall};
+    font-size: ${props => props.theme.sizes.xSmall};
   }
 
   pre {
     margin-bottom: 2rem;
+    font-size: ${props => props.theme.sizes.xSmall};
   }
 
   /* Image styles. */

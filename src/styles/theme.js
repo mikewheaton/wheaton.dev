@@ -14,6 +14,8 @@ export const fonts = {
   sans: `'Work Sans', sans-serif`,
 };
 
+// @todo This naming system doesn't scale well. Consider making it a function where
+// size(0) is 1rem and can move up and down the scale like size(4) and size(-2).
 export const sizes = {
   xxLarge: '3.157rem',
   xLarge: '2.369rem',
@@ -22,6 +24,7 @@ export const sizes = {
   small: '1rem',
   xSmall: '0.75rem',
   xxSmall: '0.563rem',
+  xxxSmall: '0.178rem',
 };
 
 export const lineHeights = {
