@@ -22,15 +22,17 @@ const BackLink = styled(Link)`
   }
 `;
 
-const Title = styled.div`
+const HomeLink = styled(Link)`
+  border-bottom: none;
   font-size: ${props => props.theme.sizes.small};
-  color: ${props => props.theme.colors.secondaryText};
+  font-weight: bold;
+  text-transform: uppercase;
 `;
 
 const NotesHeader = ({ backTo, backTitle }) => (
   <Root>
     <BackLink to={backTo}>&larr; {backTitle}</BackLink>
-    <Title>mike wheaton</Title>
+    <HomeLink to="/">Mike Wheaton</HomeLink>
   </Root>
 );
 

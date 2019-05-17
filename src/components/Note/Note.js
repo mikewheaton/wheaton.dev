@@ -94,7 +94,7 @@ export default class Note extends React.Component {
     return (
       <Page>
         <Root>
-          <NotesHeader backTitle="Home" backTo="/#notes" />
+          <NotesHeader backTitle="Notes" backTo="/#notes" />
           <Title>{frontmatter.title}</Title>
           <Date>{frontmatter.date}</Date>
           <Content dangerouslySetInnerHTML={{ __html: html }} />
