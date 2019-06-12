@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'mike wheaton',
     description: 'personal site of mike wheaton',
-    siteUrl: 'https://wheaton.design',
+    siteUrl: 'https://wheaton.dev',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

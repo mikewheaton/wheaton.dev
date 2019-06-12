@@ -13,7 +13,7 @@ In their article on how it's [making a comeback](https://www.wired.com/story/rss
 > ...
 > it can give you a comprehensive, regularly updated look at all of the content your favorite sites publish throughout the day.
 
-That standardized format is an XML file (see one for [this site](https://wheaton.design/rss.xml)) that allows apps like [Feedly](https://feedly.com/) to notify users when you post new content.
+That standardized format is an XML file (see one for [this site](https://wheaton.dev/rss.xml)) that allows apps like [Feedly](https://feedly.com/) to notify users when you post new content.
 
 Generating this for your [Gatsby](https://www.gatsbyjs.org/) blog is fairly straightforward.
 

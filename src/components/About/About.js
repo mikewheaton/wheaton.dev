@@ -95,10 +95,10 @@ const About = () => (
           design and development community.
         </p>
         <p>
-          Find me on <a href="https://twitter.com/themikewheaton">Twitter</a>,{' '}
+          Find me on <a href="https://twitter.com/mikewheatondev">Twitter</a>,{' '}
           <a href="https://github.com/mikewheaton">GitHub</a>,{' '}
           <a href="https://www.linkedin.com/in/wheatonm">LinkedIn</a>, or send
-          me an <a href="mailto:mike@wheaton.design">email</a>.
+          me an <a href="mailto:mike@wheaton.dev">email</a>.
         </p>
       </Text>
     </Container>
