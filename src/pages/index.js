@@ -1,9 +1,9 @@
+import { graphql } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
-
 import About from '../components/About/About';
-import Page from '../components/Page/Page';
 import NoteList from '../components/NoteList/NoteList';
+import Page from '../components/Page/Page';
 
 const Slide = styled.div`
   min-height: 100vh;
@@ -24,7 +24,7 @@ class Index extends React.Component {
     const observer = new IntersectionObserver(
       entries => {
         this.setState({
-          isThemeDark: entries[0].isIntersecting,
+          isThemeDark: entries[0].intersectionRatio >= 0.5,
         });
       },
       {
