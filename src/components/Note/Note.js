@@ -62,7 +62,7 @@ const Root = styled.div`
     margin: 0;
 
     figcaption {
-      font-size: ${props => props.theme.sizes.small};
+      font-size: ${props => props.theme.sizes.xSmall};
     }
   }
   .gatsby-resp-image-wrapper {
