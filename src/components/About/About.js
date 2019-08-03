@@ -79,20 +79,21 @@ const About = () => (
           I solve business problems at the intersection of design and
           engineering. My focus is on bridging the gap between these disciplines
           with improved processes and shared tools. As a UX Engineer at
-          Microsoft, I created everything from prototypes to production apps
-          while being a key contributor to the{' '}
+          Microsoft, I created everything from prototypes to production React
+          apps while building the{' '}
           <a href="https://developer.microsoft.com/en-us/fabric">Fabric</a>{' '}
-          design system.
+          design system and component library.
         </p>
         <p>
           Originally from Canada, now residing in beautiful Seattle. It
           doesn&rsquo;t rain as much as you think it does. But very nearly.
         </p>
         <p>
-          <strong title="as of May 10, 2019">Currently</strong>: Taking a
-          sabattical. Learning full-stack development with a fun side project.
-          Drawing (nearly) every day. Attending meetups to get to know the local
-          design and development community.
+          <strong title="as of August 3, 2019">Currently</strong>: Wrapping up a
+          sabattical, looking for my next full-time role. Learning full-stack
+          development with a fun side project. Drawing (nearly) every day.
+          Attending meetups to get to know the local design and development
+          community. Getting back into running.
         </p>
         <p>
           Find me on <a href="https://twitter.com/mikewheatondev">Twitter</a>,{' '}
