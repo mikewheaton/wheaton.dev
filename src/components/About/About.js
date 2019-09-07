@@ -76,30 +76,38 @@ const About = () => (
       <Subtitle>About</Subtitle>
       <Text>
         <p>
-          I solve business problems at the intersection of design and
-          engineering. My focus is on bridging the gap between these disciplines
-          with improved processes and shared tools. As a UX Engineer at
-          Microsoft, I created everything from prototypes to production React
-          apps while building the{' '}
-          <a href="https://developer.microsoft.com/en-us/fabric">Fabric</a>{' '}
+          As a <strong>product designer and front-end engineer</strong>, I focus
+          on delivering high-quality software that tackles business problems
+          from a user-centered perspective.
+        </p>
+        <p>
+          Before becoming an independent contractor, I was a{' '}
+          <a href="https://dev.to/emmawedekind/ux-engineering-3hem">
+            UX Engineer
+          </a>{' '}
+          at Microsoft. I bridged the gap between design and engineering by
+          building prototypes, production-ready React applications, and the{' '}
+          <a href="https://developer.microsoft.com/en-us/fabric">
+            Office UI Fabric
+          </a>{' '}
           design system and component library.
         </p>
         <p>
-          Originally from Canada, now residing in beautiful Seattle. It
-          doesn&rsquo;t rain as much as you think it does. But very nearly.
+          Originally from Canada, I now reside in beautiful Seattle, Washington.
+          It doesn't rain as much as you've heard it does. But just about.
         </p>
         <p>
-          <strong title="as of August 3, 2019">Currently</strong>: Wrapping up a
-          sabattical, looking for my next full-time role. Learning full-stack
-          development with a fun side project. Drawing (nearly) every day.
-          Attending meetups to get to know the local design and development
-          community. Getting back into running.
+          <strong title="as of September 7, 2019">Currently</strong>: Starting a
+          new project where we're creating a much-needed application for the
+          transportation industry. Drawing or painting (almost) every day.
+          Mentoring students at <a href="https://www.thinkful.com/">Thinkful</a>
+          . Getting back into running.
         </p>
         <p>
-          Find me on <a href="https://twitter.com/mikewheatondev">Twitter</a>,{' '}
-          <a href="https://github.com/mikewheaton">GitHub</a>,{' '}
-          <a href="https://www.linkedin.com/in/wheatonm">LinkedIn</a>, or send
-          me an <a href="mailto:mike@wheaton.dev">email</a>.
+          You can find me on{' '}
+          <a href="https://www.linkedin.com/in/wheatonm">LinkedIn</a>,{' '}
+          <a href="https://github.com/mikewheaton">GitHub</a>, or send me an{' '}
+          <a href="mailto:mike@wheaton.dev">email</a>.
         </p>
       </Text>
     </Container>
