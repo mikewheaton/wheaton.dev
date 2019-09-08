@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
 
   /* Show content hidden by index.css (prevents FOUC). */
   body {
-    opacity: 1;
+    opacity: 1 !important;
   }
 
   html {
