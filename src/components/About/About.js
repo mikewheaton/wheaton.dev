@@ -1,13 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
+import Logo from '../Logo/Logo';
+
+const TitleWrapper = styled.div`
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+`;
 
 const Title = styled.h1`
+  flex-basis: auto;
+  flex-shrink: 0;
   font-size: ${props => props.theme.sizes.xLarge};
   letter-spacing: 0.05rem;
+  line-height: 0.9;
   margin: 0;
   position: relative;
   text-transform: uppercase;
-  line-height: 0.9;
+`;
+
+const TitleLogo = styled(Logo)`
+  color: ${props => props.theme.colors.secondaryText};
+  height: ${props => props.theme.sizes.large};
+  stroke-width: 0.3rem;
 `;
 
 const Container = styled.div`
@@ -71,7 +86,11 @@ const LinkList = styled.ul`
 
 const About = () => (
   <>
-    <Title>Mike Wheaton</Title>
+    <TitleWrapper>
+      <Title>Mike Wheaton</Title>
+      <TitleLogo />
+    </TitleWrapper>
+
     <Container>
       <Subtitle>About</Subtitle>
       <Text>
