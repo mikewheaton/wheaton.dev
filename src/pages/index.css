@@ -1,0 +1,4 @@
+/* Prevent FOUC by hiding content and showing in Page.js */
+body {
+  opacity: 0;
+}
