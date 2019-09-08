@@ -22,7 +22,12 @@ const Title = styled.h1`
 const TitleLogo = styled(Logo)`
   color: ${props => props.theme.colors.secondaryText};
   height: ${props => props.theme.sizes.large};
+  opacity: 0;
   stroke-width: 0.3rem;
+
+  @media screen and (min-width: 50rem) {
+    opacity: 1;
+  }
 `;
 
 const Container = styled.div`
