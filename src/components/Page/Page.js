@@ -7,6 +7,11 @@ import theme from '../../styles/theme.js';
 const GlobalStyles = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700|Work+Sans:300,400,700');
 
+  /* Show content hidden by index.css (prevents FOUC). */
+  body {
+    opacity: 1;
+  }
+
   html {
     box-sizing: border-box;
   }
@@ -78,6 +83,7 @@ const Page = ({ children, themeVariant }) => {
       render={data => (
         <ThemeProvider theme={theme(themeVariant)}>
           <Root>
+            <GlobalStyles />
             <Helmet>
               <html lang="en" />
               <title>{data.site.siteMetadata.title}</title>
@@ -86,7 +92,6 @@ const Page = ({ children, themeVariant }) => {
                 content="VfiHt_hBis8VcZHpXz3bMhNvBbmIVc_iMWVlZ3UjSJw"
               />
             </Helmet>
-            <GlobalStyles />
             {children}
           </Root>
         </ThemeProvider>

@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import About from '../components/About/About';
 import NoteList from '../components/NoteList/NoteList';
 import Page from '../components/Page/Page';
+import './index.css';
 
 const Slide = styled.div`
   min-height: 100vh;
