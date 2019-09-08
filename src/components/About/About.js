@@ -88,7 +88,7 @@ const About = () => (
   <>
     <TitleWrapper>
       <Title>Mike Wheaton</Title>
-      <TitleLogo />
+      <TitleLogo isDrawnOnLoad />
     </TitleWrapper>
 
     <Container>

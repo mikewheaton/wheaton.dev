@@ -1,7 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Logo = ({ className }) => {
+const Logo = ({ className, isDrawnOnLoad }) => {
+  const Path = styled.path`
+    ${isDrawnOnLoad &&
+      `
+      stroke-dasharray: 278;
+      stroke-dashoffset: 278;
+      animation: drawIn 1.4s cubic-bezier(0.5, 0.2, 0.5, 0.8) forwards;
+
+      @keyframes drawIn {
+        from {
+          stroke-dashoffset: 278;
+        }
+        to {
+          stroke-dashoffset: 0;
+        }
+      }  
+    `}
+  `;
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -11,7 +29,7 @@ const Logo = ({ className }) => {
       className={className}
       style={{ overflow: 'visible' }}
     >
-      <path
+      <Path
         d="M42 442S131.278 42 213.429 42c82.15 0 89.277 400 171.428 400S474.135 42 556.286 42c82.15 0 89.278 400 171.428 400 82.151 0 89.278-400 171.429-400s89.278 400 171.428 400C1152.722 442 1242 42 1242 42"
         fill="none"
         stroke="currentcolor"
