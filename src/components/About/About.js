@@ -100,12 +100,12 @@ const About = () => (
       <Subtitle>About</Subtitle>
       <Text>
         <p>
-          As a <strong>product designer and front-end engineer</strong>, I focus
-          on delivering high-quality software that tackles business problems
-          from a user-centered perspective.
+          As a <strong>freelance designer and front-end developer</strong>, I
+          create software that tackles tough business problems with a
+          user-focused approach.
         </p>
         <p>
-          Before becoming an independent contractor, I was a{' '}
+          Previously, I was a{' '}
           <a href="https://dev.to/emmawedekind/ux-engineering-3hem">
             UX Engineer
           </a>{' '}
@@ -117,15 +117,17 @@ const About = () => (
           design system and component library.
         </p>
         <p>
-          Originally from Canada, I now reside in beautiful Seattle, Washington.
-          It doesn't rain as much as you've heard it does. But just about.
+          Originally from Canada, I now live in beautiful Seattle, Washington.
+          It doesn't rain as much as you've heard it does. But almost.
         </p>
         <p>
-          <strong title="as of September 7, 2019">Currently</strong>: Starting a
-          new project where we're creating a much-needed application for the
-          transportation industry. Drawing or painting (almost) every day.
-          Mentoring students at <a href="https://www.thinkful.com/">Thinkful</a>
-          . Getting back into running.
+          <strong title="as of October 22, 2019">Currently</strong>: Working on
+          exciting projects in the transportation and biotechnology industries.
+          Taking Spanish and painting classes. Learning and applying the{' '}
+          <a href="https://uxplanet.org/lean-ux-how-to-get-started-bb3771697e2">
+            Lean UX
+          </a>{' '}
+          methodology. Getting back into running.
         </p>
         <p>
           You can find me on{' '}
