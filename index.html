@@ -19,6 +19,7 @@
 
       :root {
         --primary: rgb(45, 45, 210);
+        --dark: rgb(15, 16, 16);
         --light: rgba(255, 255, 255, 0.5);
         --lighter: rgba(255, 255, 255, 0.75);
         --lightest: rgb(255, 255, 255, 0.95);
@@ -45,7 +46,7 @@
       }
 
       html {
-        background-color: var(--primary);
+        background-color: var(--dark);
         box-sizing: border-box;
         color: var(--lightest);
         font-family: 'Work Sans', sans-serif;
@@ -76,8 +77,14 @@
         text-transform: uppercase;
       }
 
+      p {
+        margin: 1rem 0;
+        padding: 0;
+        line-height: 1.25;
+      }
+
       svg {
-        color: var(--light);
+        color: var(--primary);
         height: 1.42rem;
         margin-left: 0.6rem;
       }
@@ -95,11 +102,11 @@
         border-bottom: 0.1rem solid var(--light);
         color: var(--lightest);
         text-decoration: none;
-        transition: all 0.1s ease-in;
+        transition: all 0.2s ease-in;
       }
 
       a:hover {
-        border-bottom: 0.2rem solid var(--lighter);
+        border-color: var(--primary);
         cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAsAgMAAAB9I4IhAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTU5RjBCRkQ2QTMzMTFFNjlBNjlBREJCM0E5MDE4RTIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTU5RjBCRkU2QTMzMTFFNjlBNjlBREJCM0E5MDE4RTIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxNTlGMEJGQjZBMzMxMUU2OUE2OUFEQkIzQTkwMThFMiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoxNTlGMEJGQzZBMzMxMUU2OUE2OUFEQkIzQTkwMThFMiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pgj0zqsAAAAJUExURQAAAP///////3N4pWMAAAADdFJOU///ANfKDUEAAABOSURBVBjTrcuhEcAwDATBJ09Uncj1J6wqA0KU2JkxCFuy6q7o7i5NOf+WNkKxyhkb5ZTCiRMNOQ28hAEeKljUPlR9KmvqLgcqgDiQJE1dw9ma97mQdGMAAAAASUVORK5CYII=')
             15 5,
           auto;
@@ -116,10 +123,10 @@
         }
       }
 
-      @media (min-width: 1000px) {
+      @media (min-width: 900px) {
         html {
-          /* Stop scaling (at 1000px, 4vw = 40px). */
-          font-size: 40px;
+          /* Stop scaling (at 900px, 4vw = 36px). */
+          font-size: 36px;
         }
       }
     </style>
@@ -132,7 +139,6 @@
         viewBox="0 0 1282 484"
         preserveAspectRatio="none"
         stroke-width="2%"
-        className="{className}"
         style="overflow: visible"
       >
         <path
@@ -145,31 +151,50 @@
       </svg>
     </header>
     <p>
-      As a contract front-end developer with a background in product design, I
-      apply a user-focused approach to creating software that tackles tough
-      business problems.
+      As a front-end developer with a background in product design, I build
+      software that tackles tough business problems with thoughtful,
+      user-focused solutions.
     </p>
     <p>
-      Previously: As a
-      <a href="https://dev.to/emmawedekind/ux-engineering-3hem">
-        UX Engineer
-      </a>
-      at Microsoft, I bridged the gap between design and engineering by rapidly
-      building prototypes, production-ready React applications, and the
-      <a href="https://developer.microsoft.com/en-us/fluentui"> Fluent UI </a>
-      design system.
+      Over the past decade, I've worked at Microsoft (building
+      <a
+        href="https://developer.microsoft.com/en-us/fluentui"
+        target="_blank"
+        rel="noreferrer"
+        >Fluent UI</a
+      >), T-Mobile, and IWK Health. I now consult directly with fast-paced
+      startups including
+      <a
+        href="https://www.culturebiosciences.com/"
+        target="_blank"
+        rel="noreferrer"
+        >Culture</a
+      >,
+      <a
+        href="https://www.linkedin.com/company/lexmarkets/about/"
+        target="_blank"
+        rel="noreferrer"
+        >LEX Markets</a
+      >,
+      <a href="https://albert.com/" target="_blank" rel="noreferrer">Albert</a>,
+      and
+      <a href="https://www.convex.dev/" target="_blank" rel="noreferrer"
+        >Convex</a
+      >.
     </p>
     <p>
-      <span title="as of August 20, 2023">Recently</span>: Building web apps and
-      design systems for startups in developer tooling and fintech. Exploring my new
-      home of San Antonio, Texas. Getting back on the bike. Learning painting and
+      When I'm away from the screen I enjoy traveling, cycling, painting, and
       printmaking.
     </p>
     <p>
       Want to work together? You can find me on
-      <a href="https://www.linkedin.com/in/wheatonm">LinkedIn</a>,
-      <a href="https://github.com/mikewheaton">GitHub</a>, or send me an
-      <a href="mailto:mike@wheaton.dev">email</a>.
+      <a
+        href="https://www.linkedin.com/in/wheatonm"
+        target="_blank"
+        rel="noreferrer"
+        >LinkedIn</a
+      >
+      or send me an <a href="mailto:mike@wheaton.dev">email</a>.
     </p>
   </body>
 </html>
